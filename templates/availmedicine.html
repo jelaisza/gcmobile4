@@ -1,0 +1,54 @@
+<style>
+
+.title{
+color:#fff;
+
+}
+</style>
+
+
+<ion-view view-title="Available Medicines" style="color:white;">
+	<ion-content style="background-color:#f7f7f7;">
+
+<div class="container wrapper" ng-controller="FirstCtrl">
+		<div class="card">
+		  <div class="item item-text-wrap">
+		    <center><h4 style="font-size:20px;">Available Medicines</h4></center>
+				<br>
+<hr>
+<br>
+											<center>
+															<div class="row">
+																		<div class="col col-50">
+																			<h3><strong>Medicine</strong></h3>
+																		</div>
+
+
+																		<div class="col col-50">
+																			<h3><strong>Quantity</strong></h3>
+																		</div>
+															</div>
+					<div ng-repeat="detail in details">
+
+
+
+											<div class="row">
+														<div class="col col-50">
+															<h3>{{detail.m_name}}</h3>
+														</div>
+
+
+														<div class="col col-50">
+															<h3>{{detail.m_stockonhand}}</h3>
+														</div>
+											</div>
+
+											</center>
+
+		  </div>
+		</div>
+
+</div>
+</div>
+</ion-content>
+  </ion-view>

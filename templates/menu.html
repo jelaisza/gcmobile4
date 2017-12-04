@@ -1,0 +1,104 @@
+<style>
+.scroll-content{
+
+
+    }
+    .calm{
+
+      background-color:#13E39A;
+    }
+
+.icon{
+font-size:22px;
+
+
+}
+.image{
+width:90px;
+height:90px;
+border-radius:200px;
+ border: 3px solid white;
+
+}
+
+
+
+</style>
+
+<ion-side-menus>
+  <ion-side-menu-content>
+    <ion-nav-bar class="calm">
+
+      <ion-nav-back-button style="color:white;">
+      </ion-nav-back-button>
+
+
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left" style="color:white;">
+        </button>
+      </ion-nav-buttons>
+
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu side="left">
+
+    <ion-header-bar style="background-color:#13E39A;">
+      <h1 class="title" style="color:white;">Menu</h1>
+    </ion-header-bar>
+
+
+
+    <ion-content>
+    <center><div class="item "  href="#/app/account" style=" padding-right: 100px;background-color: #13E39A; ">
+      <img class="image" src="img/user.png"  >
+      <br>
+      <br>
+
+    <h2 style="color:#fff;">Jesza Bada</h2>
+  </div></center>
+
+
+  	  <ion-item menu-close href="#/app/home1">
+  	   <i class="icon ion-home padding" style="font-size:30px;"></i>
+  	  Home
+  	</ion-item>
+
+
+          <ion-item menu-close href="#/app/announcement">
+          <i class="icon ion-android-list padding"></i>
+
+           Announcement
+         </ion-item>
+
+         <ion-item menu-close href="#/app/record">
+         <i class="icon ion-document padding" style="font-size:30px;"></i>
+
+          My Record
+        </ion-item>
+
+        <ion-item menu-close href="#/app/ehealth">
+        <i class="icon ion-document padding" style="font-size:30px;"></i>
+
+         E-Health Advice
+       </ion-item>
+
+       <ion-item menu-close href="#/app/availmedicine">
+       <i class="icon ion-medkit padding" style="font-size:30px;"></i>
+
+        Available Medicine
+      </ion-item>
+
+
+
+      		 <ion-item class="item-content" menu-close href="#/app/music" ng-click="logout()" ng-controller="Menu">
+                <i class="icon ion-log-out padding"></i> Logout
+              </ion-item>
+
+
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+
+</ion-side-menus>

@@ -1,0 +1,49 @@
+<style>
+.bg{
+	 background:-webkit-linear-gradient(left top, #6593f5,#0e4d92);
+	 background:-o-linear-gradient(bottom right, #6593f5,#0e4d92);
+	 background:-moz-linear-gradient(bottom right, #6593f5,#0e4d92);
+	 background:linear-gradient(bottom right, #6593f5,#0e4d92);
+}
+</style> 
+<ion-view title="Signup" hide-nav-bar="true" class="bg">
+  <ion-content padding="true" class="manual-ios-statusbar-padding" ng-controller="register">
+    <div>
+      <img src="img/stotomas.png" style="display: block; width: 70%; height: 70%; margin-left: auto; margin-right: auto; border-radius: 500px;">
+    </div>
+    <form class="list" ng-submit="loginform()">
+      <div class="spacer" style="height: 20px;"></div>
+      <ion-list>
+        <label class="item item-input item-floating-label">
+          <span class="input-label" style="color:white;">Fullname</span>
+          <input type="text" placeholder="Fullname" ng-model="fullname" style="color:white;" required>
+        </label>
+
+        <label class="item item-input item-floating-label">
+          <span class="input-label" style="color:white;">Username</span>
+          <input type="text" placeholder="Username" ng-model="username" style="color:white;" required>
+        </label>
+		
+        <label class="item item-input item-floating-label">
+          <span class="input-label" style="color:white;">Password</span>
+          <input type="password" placeholder="Password" ng-model="password" style="color:white;" required>
+        </label>
+		
+		<label class="item item-input item-floating-label">
+          <span class="input-label" style="color:white;">Address</span>
+          <input type="text" placeholder="Address" ng-model="address" style="color:white;" required>
+        </label>
+		
+		<label class="item item-input item-floating-label">
+          <span class="input-label" style="color:white;">Contact No.:</span>
+          <input type="number" placeholder="Contact No." ng-model="cont" style="color:white;" required>
+        </label>
+
+      </ion-list>
+	  	  <div class="button-bar">
+		<button type="submit" class="button button-block" style="background-color:#008ecc; color:white;">SUMBIT</button>
+	</div>
+	<center><p style="color:white">Already have an account?<a href="#/login" style="color:white;"> SIGN IN</a></p></center>
+    </form>
+  </ion-content>
+</ion-view>

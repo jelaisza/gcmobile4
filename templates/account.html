@@ -1,0 +1,87 @@
+<style>
+	.hcolor {
+	 background:-webkit-linear-gradient(left top, #6593f5,#0e4d92);
+	 background:-o-linear-gradient(bottom right, #6593f5,#0e4d92);
+	 background:-moz-linear-gradient(bottom right, #6593f5,#0e4d92);
+	 background:linear-gradient(bottom right, #6593f5,#0e4d92);
+	}
+
+.card1
+ .item{
+  background: #6593f5;
+
+}
+
+.card2
+ .item{
+  background: white;
+}
+
+.title{
+color:#fff;
+
+}
+</style>
+
+<ion-view view-title="" class="hcolor">
+  <ion-content class="padding" ng-controller="account">
+ <ion-refresher
+    pulling-text="Pull to refresh..."
+    on-refresh="doRefresh()">
+ </ion-refresher>
+  <center> 
+     <div>
+      <img src="img/stotomas.png" style="display: block; width: 70%; height: 70%; margin-left: auto; margin-right: auto; border-radius: 300px;">
+    </div>
+ <div>
+<br>
+
+
+<div class="row">
+	<div class="col col-50">
+	<div class="card1">
+	  <div class="item item-text-wrap"><center><a class="icon ion-android-person padding" href="#/app/myaccount" ng-click="profile()" style="font-size:100px;  color:white; "></a></center>
+			<center><h2 style="color:#fff; font-size:20px;">My Profile</h2>			</center>
+	  </div>
+	</div>
+</div>
+
+
+
+<div class="col col-50">
+	<div class="card2">
+	  <div class="item item-text-wrap"><center><a class="icon ion-android-calendar padding" href="#/app/playlists" style="font-size:100px;  color:#6593f5 "></a></center>
+			<center><h2 style="color:#6593f5; font-size:20px;">Events</h2></center>
+
+	  </div>
+	</div>
+	</div>
+
+</div>
+
+
+<div class="row">
+<div class="col col-50">
+	<div class="card2">
+		<div class="item item-text-wrap"><center><a class="icon ion-alert padding" ng-click="showConfirm()" style="font-size:100px;  color:#6593f5;"></a></center>
+			<center><h2 style="color:#6593f5; font-size:20px;">Report Problem</h2>			</center>
+	  </div>
+	</div>
+</div>
+
+<div class="col col-50">
+	<div class="card1">
+		<div class="item item-text-wrap"><center><a class="icon ion-android-list padding" href="#/app/recetalist" style="font-size:100px;  color:#FFF;"></a></center>
+			<center><h2 style="color:#FFF; font-size:20px;">Find Info.</h2>			</center>
+	  </div>
+	</div>
+</div>
+
+</div>
+
+</div>
+	
+	 </center>
+	 <br><br>
+  </ion-content>
+</ion-view>

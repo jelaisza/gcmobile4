@@ -1,0 +1,36 @@
+<style>
+
+.title{
+color:#fff;
+
+}
+</style>
+
+
+<ion-view view-title="Announcement">
+	<ion-content  style="background-color:#f7f7f7;">
+
+<div class="container wrapper" ng-controller="SecondCtrl">
+<div ng-repeat="detail in details">
+
+	<div class="container" style="margin-top:40px; ">
+
+		<div class="card">
+
+		  <div class="item item-divider" style="background-color:#13E39A; color:white;">
+		  {{detail.a_subject}}
+		  </div>
+		  <div class="item item-text-wrap">
+		    {{detail.a_content}}
+				<br><br>by: Admin
+		  </div>
+
+
+		</div>
+
+</div>
+</div>
+
+
+	</ion-content>
+</ion-view>

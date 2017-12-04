@@ -1,0 +1,73 @@
+<style>
+.title{
+color:#fff;
+
+}
+
+</style>
+
+
+<ion-view view-title="Personal Record" style="color:white;">
+	<ion-content style="background-color:#f7f7f7;">
+
+		<div class="container wrapper" ng-controller="AccountCtrl">
+		<div ng-repeat="data in accountInfo">
+
+					    <div class="card">
+					      <div class="item item-text-wrap">
+
+									<h2 style="font-size:15px; font-weight:bold; font-family:verdana;">Student #</h2>
+					        <h2 style="font-size:15px; font-family:verdana;">	{{data.username}}</h2>
+									<br>
+					        <h2 style="font-size:15px; font-weight:bold; font-family:verdana;">Name</h2>
+					        <h2 style="font-size:15px; font-family:verdana;">	{{data.fullname}}</h2>
+					        <br>
+					        <h2 style="font-size:15px; font-weight:bold; font-family:verdana;">Course</h2>
+					        <h2 style="font-size:15px; font-family:verdana;">{{data.course}}</h2>
+					        <br>
+					        <h2 style="font-size:15px; font-weight:bold; font-family:verdana;">Age</h2>
+					        <h2 style="font-size:15px; font-family:verdana;">{{data.age}}</h2>
+					        <br>
+					        <h2 style="font-size:15px; font-weight:bold; font-family:verdana;">Sex</h2>
+					        <h2 style="font-size:15px; font-family:verdana;">{{data.sex}}</h2>
+					        <br>
+					        <h2 style="font-size:15px; font-weight:bold; font-family:verdana;">Birthday</h2>
+					        <h2 style="font-size:15px; font-family:verdana;">{{data.birthday}}</h2>
+					        <br>
+					        <h2 style="font-size:15px; font-weight:bold; font-family:verdana;">Status</h2>
+					        <h2 style="font-size:15px; font-family:verdana;">{{data.status}}</h2>
+					        <br>
+					        <h2 style="font-size:15px; font-weight:bold; font-family:verdana;;">Tel#/Cel#</h2>
+					        <h2 style="font-size:15px; font-family:verdana;">{{data.contact}}</h2>
+					        <br>
+					        <h2 style="font-size:15px; font-weight:bold; font-family:verdana;">Address</h2>
+					        <h2 style="font-size:15px; font-family:verdana;">{{data.address}}</h2>
+					        <br>
+					        <h2 style="font-size:15px; font-weight:bold; font-family:verdana;">Height</h2>
+					        <h2 style="font-size:15px; font-family:verdana;">{{data.pe_height}}</h2>
+					        <br>
+					        <h2 style="font-size:15px; font-weight:bold; font-family:verdana;;">Weight:</h2>
+					        <h2 style="font-size:15px; font-family:verdana;">{{data.pe_weight}}</h2>
+
+
+					      </div>
+					    </div><br><br>
+</div>
+
+</div>
+
+
+	</ion-content>
+<br>
+  <div class="tabs">
+    <a href="#/app/record" class="tab-item">
+      Personal Record
+    </a>
+    <a href="#/app/medical" class="tab-item">
+      Medical Record
+    </a>
+    <a href="#/app/dental" class="tab-item">
+      Dental Record
+    </a>
+  </div>
+</ion-view>
